@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test">
+		<parameter name="username" value="standard_user"></parameter>
+		<parameter name="password" value="secret_sauce"></parameter>
+		<parameter name="FirstName" value="pavi"></parameter>
+		<parameter name="LastName" value="v"></parameter>
+		<parameter name="PostalCode" value="609111"></parameter>
+		<parameter name="urlLab" value="https://saucelabs.com/"></parameter>
+
+		<parameter name="urlDemo"
+			value="https://www.saucedemo.com/inventory.html"></parameter>
+		<parameter name="title" value="Your Cart"></parameter>
+		<parameter name="title1" value="Checkout: Your Information"></parameter>
+		<parameter name="title2" value="Checkout: Overview"></parameter>
+		<classes>
+			<class name="org.demo.Sauce"></class>
+		</classes>
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

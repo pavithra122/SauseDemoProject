@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="urlLab" value="https://saucelabs.com/"/>
+  <parameter name="urlDemo" value="https://www.saucedemo.com/inventory.html"/>
+  <parameter name="password" value="secret_sauce"/>
+  <parameter name="FirstName" value="pavi"/>
+  <parameter name="PostalCode" value="609111"/>
+  <parameter name="title1" value="Checkout: Your Information"/>
+  <parameter name="title2" value="Checkout: Overview"/>
+  <parameter name="LastName" value="v"/>
+  <parameter name="title" value="Your Cart"/>
+  <parameter name="username" value="standard_user"/>
+  <test name="Test(failed)">
+    <parameter name="urlLab" value="https://saucelabs.com/"/>
+    <parameter name="urlDemo" value="https://www.saucedemo.com/inventory.html"/>
+    <parameter name="password" value="secret_sauce"/>
+    <parameter name="FirstName" value="pavi"/>
+    <parameter name="PostalCode" value="609111"/>
+    <parameter name="title1" value="Checkout: Your Information"/>
+    <parameter name="title2" value="Checkout: Overview"/>
+    <parameter name="LastName" value="v"/>
+    <parameter name="title" value="Your Cart"/>
+    <parameter name="username" value="standard_user"/>
+    <classes>
+      <class name="org.demo.Sauce">
+        <methods>
+          <include name="tc4" invocation-numbers="0"/>
+          <include name="tc5" invocation-numbers="0"/>
+          <include name="tc3"/>
+          <include name="tc0"/>
+        </methods>
+      </class> <!-- org.demo.Sauce -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
